@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "aaaaatiwarishubaks-14bc"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "aaaaatiwarishubaks-14bc"
+  template:
+    metadata:
+      labels:
+        app: "aaaaatiwarishubaks-14bc"
+    spec:
+      containers:
+        - name: "aaaaatiwarishubaks-14bc"
+          image: "diaggarwregistry.azurecr.io/aaaaatiwarishubaks115c"
+          ports:
+          - containerPort: 8080
